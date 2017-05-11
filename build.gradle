@@ -24,6 +24,11 @@ dependencies {
     implementation 'com.google.guava:guava:21.0'
 
     // Use JUnit test framework
-    testImplementation 'junit:junit:4.12'
+    //testImplementation 'junit:junit:4.12'
+    testImplementation 'org.testng:testng:6.1.1'
 }
+test {
+        // enable TestNG support (default is JUnit)
+        useTestNG() 
+    }
 
