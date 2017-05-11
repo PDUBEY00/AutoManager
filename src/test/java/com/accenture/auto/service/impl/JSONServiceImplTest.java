@@ -1,16 +1,24 @@
 package com.accenture.auto.service.impl;
 
+import java.util.HashMap;
+import java.util.List;
+
 import org.testng.annotations.Test;
 
-public class JSONServiceImplTest {
+import com.accenture.auto.model.base.Vehicle;
+import com.accenture.auto.service.Service;
 
+public class JSONServiceImplTest {
+Service service = new JSONServiceImpl();
   @Test
   public void getVehicleDetails() {
-    throw new RuntimeException("Test not implemented");
+	HashMap<String, List<Vehicle>> jsonres = service.getVehicleDetails();
+   // throw new RuntimeException("Test not implemented");
   }
 
   @Test
   public void saveVehicleDetails() {
-    throw new RuntimeException("Test not implemented");
+	  service.saveVehicleDetails(null);
+   // throw new RuntimeException("Test not implemented");
   }
 }
