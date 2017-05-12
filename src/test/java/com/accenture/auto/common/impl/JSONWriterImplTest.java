@@ -2,10 +2,13 @@ package com.accenture.auto.common.impl;
 
 import org.testng.annotations.Test;
 
+import com.accenture.auto.common.JSONWriter;
+
 public class JSONWriterImplTest {
 
   @Test
   public void writeFile() {
-    throw new RuntimeException("Test not implemented");
+    JSONWriter jsonWriter = new JSONWriterImpl();
+    jsonWriter.writeFile("dsfsd");
   }
 }
