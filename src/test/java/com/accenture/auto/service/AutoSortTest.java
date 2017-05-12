@@ -48,17 +48,17 @@ public class AutoSortTest {
 		// When
 		Collections.sort(vehicleList);
 		// Than
-		assertEquals(vehicleList.get(0).getPrice(), 23000);
+		assertEquals(vehicleList.get(0).getPrice(), 23000.0);
 	}
 	
 	
 	
 	private List<Vehicle> populateVehicleList(){
 		
-		Vehicle focus = new Car("Red", 27000, "Petrol", 1600);
-		Vehicle insignia = new Car("Red", 23000, "Petrol", 2000);
-		Vehicle audi = new Car("Red", 44000, "Diesel", 2000);
-		Vehicle BMW = new Car("Red", 48000, "Diesel", 2000);
+		Vehicle focus = new Car("Red", 27000.0, "Petrol", 1600);
+		Vehicle insignia = new Car("Red", 23000.0, "Petrol", 2000);
+		Vehicle audi = new Car("Red", 44000.0, "Diesel", 2000);
+		Vehicle BMW = new Car("Red", 48000.0, "Diesel", 2000);
 		
 		vehicleList.add(focus);
 		vehicleList.add(insignia);
