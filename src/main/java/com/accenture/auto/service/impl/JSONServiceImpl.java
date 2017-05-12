@@ -13,12 +13,11 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class JSONServiceImpl implements Service{
-	JSONWriter writer;
-	JSONReader reader;
+	private JSONWriter writer;
+	private JSONReader reader;
 
 	@Override
 	public HashMap<String, List<Vehicle>> getVehicleDetails() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
@@ -28,6 +27,7 @@ public class JSONServiceImpl implements Service{
 		String jsonString = null;
 		try {
 			jsonString = mapper.writeValueAsString(vehicleDetails);
+			writer.writeFile(jsonString);
 		} catch (JsonGenerationException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
