@@ -1,5 +1,5 @@
 package com.accenture.auto.common;
 
-public interface Reader {
+public interface JSONReader {
 	public String readFile();
 }

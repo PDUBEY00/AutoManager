@@ -1,8 +1,8 @@
 package com.accenture.auto.common.impl;
 
-import com.accenture.auto.common.Reader;
+import com.accenture.auto.common.JSONReader;
 
-public class FileReader implements Reader{
+public class JSONReaderImpl implements JSONReader{
 
 	@Override
 	public String readFile() {

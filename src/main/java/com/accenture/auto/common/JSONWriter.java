@@ -1,6 +1,6 @@
 package com.accenture.auto.common;
 
-public interface Writer {
+public interface JSONWriter {
 	/**
 	 * 
 	 * @param content
