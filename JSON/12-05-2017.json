@@ -1,0 +1,27 @@
+{
+	"Bike": [{
+			"color": "red",
+			"price": "40000",
+			"fuelType": "Diesel",
+			"engineSize": "1600"
+		},
+		{
+			"color": "blue",
+			"price": "20000",
+			"fuelType": "Unleaded",
+			"engineSize": "2400"
+		},
+		{
+			"color": "black",
+			"price": "50000",
+			"fuelType": "Unleaded",
+			"engineSize": "2400"
+		},
+		{
+			"color": "white",
+			"price": "35000",
+			"fuelType": "Diesel",
+			"engineSize": "1800"
+		}
+	]
+}
