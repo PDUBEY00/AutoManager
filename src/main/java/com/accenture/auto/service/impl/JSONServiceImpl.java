@@ -1,8 +1,12 @@
 package com.accenture.auto.service.impl;
 
+import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
+
+
 
 import com.accenture.auto.common.JSONReader;
 import com.accenture.auto.common.JSONWriter;
@@ -12,13 +16,25 @@ import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public class JSONServiceImpl implements Service{
+public class JSONServiceImpl implements Service {
+	
+	
 	private JSONWriter writer;
 	private JSONReader reader;
 
+	
+	
+	public JSONServiceImpl(JSONWriter writer, JSONReader reader) {
+		super();
+		this.writer = writer;
+		this.reader = reader;
+	}
+
 	@Override
 	public HashMap<String, List<Vehicle>> getVehicleDetails() {
-		return null;
+		reader.readFile();
+
+			return null;
 	}
 
 	@Override
@@ -39,6 +55,7 @@ public class JSONServiceImpl implements Service{
 			e.printStackTrace();
 		}
 	}
+
 	public JSONWriter getWriter() {
 		return writer;
 	}
