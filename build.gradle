@@ -29,7 +29,7 @@ dependencies {
    
     testImplementation 'org.testng:testng:6.10'
 
->>>>>>> dec8dac46ece3f72a310ce0b8e76f765f94bb757
+
 }
   test {
         // enable TestNG support (default is JUnit)
