@@ -27,7 +27,7 @@ dependencies {
     //testImplementation 'junit:junit:4.12'
     testImplementation 'org.testng:testng:6.1.1'
 }
-test {
+  test {
         // enable TestNG support (default is JUnit)
         useTestNG() 
     }
